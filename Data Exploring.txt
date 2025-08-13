@@ -1,0 +1,73 @@
+1. Agents
+
+AgentID – Unique identifier for each real estate agent (used to link with sales or visits).
+FirstName / LastName – Agent’s name.
+Phone / Email – Contact details for communication or client follow-up analysis.
+
+2. Clients
+
+ClientID – Unique identifier for each client (links with sales and visits).
+FirstName / LastName – Client’s name.
+Phone / Email – Client contact details (for CRM or client retention analysis).
+
+3. Properties
+
+PropertyID – Unique ID for each property (links to sales and visits).
+Property Type – Category of property (e.g., Apartment, Villa, Land).
+Location – Geographical area or address of the property (useful for mapping in Power BI).
+Size_sqm – Property size in square meters (helps compare property sizes vs. prices).
+PriceUSD – Listing price of the property in USD.
+
+4. Sales
+
+SalesID – Unique identifier for each completed sale.
+AgentID – ID of the agent who closed the sale (links to Agents table).
+ClientID – ID of the buyer (links to Clients table).
+PropertyID – ID of the sold property (links to Properties table).
+Sales Date – Date of the sale transaction.
+Sale Price – Final selling price of the property (may differ from listing price).
+
+5. Visits
+VisitID – Unique identifier for each property visit.
+PropertyID – The property visited.
+ClientID – Client who visited.
+AgentID – Agent who accompanied the visit.
+Visit Date – Date of the visit.
+______________________________________________________________________________________________________
+1. Agents – Who sells the properties?
+This table lists all the sales agents in the company.
+From it, you can answer:
+   How many agents do we have?
+   Who are the top sellers?
+   Which agents handle the most visits or sales?
+_____________________________________
+2. Clients – Who is buying or visiting?
+This is the database of all clients.
+You can explore:
+   How many unique clients we serve.
+   Which clients bought properties vs. which only visited.
+   How often clients visit before making a purchase.
+____________________________________
+3. Properties – What is for sale?
+This table contains all the real estate listings.
+It tells you:
+   What types of properties we sell (apartments, villas, land, etc.).
+   Where properties are located (can be mapped in Power BI).
+   Size and price trends in the market.
+___________________________________
+4. Sales – What was actually sold?
+This is the core revenue table.
+It tells you:
+   When sales happened.
+   Which properties sold and for how much.
+   Which agent sold each property.
+   The difference between the listing price and sale price.
+_____________________________________
+5. Visits – Who showed interest?
+This is the early stage of the buying journey.
+It tells you:
+  Which properties attract the most visits.
+  Which clients visited multiple times.
+  Which agents handle the most property viewings.
+  How long it takes from a first visit to a sale.
+
