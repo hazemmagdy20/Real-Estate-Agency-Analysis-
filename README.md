@@ -1,3 +1,7 @@
 # Real-Estate-Agency-Analysis
 
-Interactive Power BI dashboards providing insights into property listings, buyer demographics, and sales performance across major cities. Includes KPI analysis, pricing trends, and city-level recommendations to optimize marketing strategies and inventory management.
+## 📌 Overview
+This project contains a set of **interactive Power BI dashboards** designed to provide actionable insights into **property listings, client interactions, and sales performance** across major cities.  
+The dashboards enable stakeholders to track **KPIs**, identify **top-performing locations**, understand **buyer behaviors**, and optimize **marketing and pricing strategies**.
+
+
